@@ -25,9 +25,9 @@
     </LayoutTemplate>
 
 </asp:ListView>
-<asp:EntityDataSource ID="CourseByCategoryEntityDataSource" runat="server" ConnectionString="name=QLKhoaHocEntities" DefaultContainerName="QLKhoaHocEntities" EnableFlattening="False" EntitySetName="Courses" EntityTypeFilter="Course" Include="Category" Where="it.Category.CatID = 1">
+<asp:EntityDataSource ID="CourseByCategoryEntityDataSource" runat="server" ConnectionString="name=QLKhoaHocEntities" DefaultContainerName="QLKhoaHocEntities" EnableFlattening="False" EntitySetName="Courses" EntityTypeFilter="Course" Include="Category" Where="it.CatID = @ID">
     <WhereParameters>
-        <asp:QueryStringParameter Name="Category_Id" QueryStringField="CatID" Type="Int32" />
+        <asp:QueryStringParameter Name="ID" QueryStringField="CatID" Type="Int32" />
     </WhereParameters>
 </asp:EntityDataSource>
 

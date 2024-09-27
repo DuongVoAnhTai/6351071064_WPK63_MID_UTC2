@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucManageCourse.ascx.cs" Inherits="de1.UserControl.ucManageCourse" %>
-<asp:GridView ID="GridView1" runat="server" DataKeyNames="id" AutoGenerateColumns="false" AllowPaging="true" PageSize="5">
+<asp:GridView ID="gvQLKhoaHoc" runat="server" DataKeyNames="CatID" AutoGenerateColumns="false" AllowPaging="true" PageSize="5" OnPageIndexChanging="gvQLKhoaHoc_PageIndexChanging">
 <Columns>
     <asp:TemplateField HeaderText="No.">
         <ItemTemplate>
