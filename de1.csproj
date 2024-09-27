@@ -78,6 +78,7 @@
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
     <Content Include="ManageCategory.aspx" />
+    <Content Include="ManageCourse.aspx" />
     <Content Include="ManageProduct.aspx" />
     <Content Include="QLKhoaHoc.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -94,6 +95,7 @@
     <Content Include="UserControl\ucCourseByCategory.ascx" />
     <Content Include="UserControl\ucCourseCategory.ascx" />
     <Content Include="UserControl\ucCourseDetails.ascx" />
+    <Content Include="UserControl\ucManageCourse.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +142,13 @@
     </Compile>
     <Compile Include="ManageCategory.aspx.designer.cs">
       <DependentUpon>ManageCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCourse.aspx.cs">
+      <DependentUpon>ManageCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageCourse.aspx.designer.cs">
+      <DependentUpon>ManageCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="ManageProduct.aspx.cs">
       <DependentUpon>ManageProduct.aspx</DependentUpon>
@@ -191,6 +200,13 @@
     </Compile>
     <Compile Include="UserControl\ucCourseDetails.ascx.designer.cs">
       <DependentUpon>ucCourseDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucManageCourse.ascx.cs">
+      <DependentUpon>ucManageCourse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucManageCourse.ascx.designer.cs">
+      <DependentUpon>ucManageCourse.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
