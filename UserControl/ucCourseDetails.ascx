@@ -106,9 +106,9 @@
 
     </ItemTemplate>
 </asp:FormView>
-<asp:EntityDataSource ID="CourseDetailEntityDataSource" runat="server" ConnectionString="name=QLKhoaHocEntities" DefaultContainerName="QLKhoaHocEntities" EnableFlattening="False" EntitySetName="Courses" EntityTypeFilter="Course" Include="Category" Where="it.CatID = @Id " Select="">
+<asp:EntityDataSource ID="CourseDetailEntityDataSource" runat="server" ConnectionString="name=QLKhoaHocEntities" DefaultContainerName="QLKhoaHocEntities" EnableFlattening="False" EntitySetName="Courses" EntityTypeFilter="Course" Include="Category" Where="it.ID = @ID">
     <WhereParameters>
-        <asp:QueryStringParameter Name="Id" QueryStringField="ID" Type="Int32" />
+        <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
     </WhereParameters>
 </asp:EntityDataSource>
 
